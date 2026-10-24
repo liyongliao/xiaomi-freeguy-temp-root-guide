@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-24",
+  "scope": "One owner-authorized Xiaomi freeguy build; no cross-model claim",
+  "build": {
+    "ro.product.device": "freeguy",
+    "ro.build.version.sdk": "34",
+    "ro.product.cpu.abilist": "armeabi-v7a,armeabi",
+    "ro.build.fingerprint": "xiaomi/freeguy/freeguy:14/UQ1A.240105.004.A1/OS3.0.106.0.UFTMATV:user/release-keys"
+  },
+  "runtime_observations": {
+    "identity": "uid=0(root) gid=0(root) groups=0(root) context=u:r:misysdiagnose:s0",
+    "context": "u:r:misysdiagnose:s0",
+    "capabilities": "CapInh:\t0000000000000000\nCapPrm:\t0000003fffffffff\nCapEff:\t0000003fffffffff\nCapBnd:\t0000003fffffffff\nCapAmb:\t0000000000000000",
+    "boot_access": "DENIED",
+    "policy_access": "DENIED"
+  },
+  "before_selinux": "Enforcing",
+  "after_selinux": "Enforcing",
+  "ordinary_adb_uid": 2000,
+  "vbmeta_device_state": "locked",
+  "verified_boot": "green",
+  "active_slot": "_a",
+  "diagnostic_binary": {
+    "path": "/vendor/bin/misysdiagnose",
+    "format": "elf32-littlearm",
+    "bytes": 26656,
+    "sha256": "62b8b6ae2cd2d803fa788592bbb7814a9c87c38adcbdea4ae14e77ae4060a610",
+    "complete_copy_verified": true,
+    "redistributed": false
+  },
+  "precompiled_policy_sha256": "05b88ce4eb2763e63c7049fbfcf8ca6b8c5b08a58a4e6fef9ff6c82677061a06",
+  "conclusion": {
+    "restricted_diagnostic_uid0_verified": true,
+    "full_temporary_root_verified": false,
+    "partition_backup_completed": false,
+    "note": "UID 0 / access probes alone do not establish full Root or a partition backup."
+  },
+  "offline_inputs": {
+    "product-mapping-34.0.cil": {
+      "bytes": 106,
+      "sha256": "49f85bd785e8c5a908c178a21871cf9e376f5c76d1a3ea07123db8d77e389b44"
+    },
+    "system-mapping-34.0.cil": {
+      "bytes": 210196,
+      "sha256": "cddd61d2cd6ebbda575607a3a02bdee8411984f309ae376d7519240ae1709926"
+    },
+    "system_ext-mapping-34.0.cil": {
+      "bytes": 903,
+      "sha256": "33e695560a459a9a09b3173e71d12278f1f81e4f01e2ac9a299bed7140c5effb"
+    },
+    "kernel-config.gz": {
+      "bytes": 44637,
+      "sha256": "3c3a4fb23d5be79b0c1865a67ac267cadb52d5062f532a05bee8e2c5af31fab0"
+    },
+    "kernel-config.txt": {
+      "bytes": 205248,
+      "sha256": "242bb8a25c426507a7e8a320e5edb97a2b44e98d3d763a0841d23a8de7857b94"
+    },
+    "plat_sepolicy.cil": {
+      "bytes": 2068837,
+      "sha256": "8300228ed467137763c96f75bcccd21749be99d24fbfa49765136d23880625bf"
+    },
+    "product_sepolicy.cil": {
+      "bytes": 3938,
+      "sha256": "8181e44859b2ad6ced31127fc1b2a8dceb4c85c82d0d64041bd56d6e451c2467"
+    },
+    "system_ext_sepolicy.cil": {
+      "bytes": 49081,
+      "sha256": "f4e36dae725439a9d51ac02b6b8d488827c6e19b921b6ca81ea003fd53611619"
+    },
+    "vendor_sepolicy.cil": {
+      "bytes": 993225,
+      "sha256": "c531069598f462e422c571780aeda4310dda23e05696f11817321f6fc459c8dc"
+    }
+  },
+  "offline_audit": {
+    "top_level_forms": 40787,
+    "concrete_types": 2502,
+    "unresolved_symbols": 0,
+    "matching_rule_records": 678,
+    "live_policy_equivalence_proven": false
+  },
+  "rea_evidence_ids": {
+    "device_identity": "ev_762373fe4c67e60bbd51fc0207fff7924820c5e97f72b5a35bc0574b03ada417",
+    "elf_header": "ev_96fa640c21665f3d68586cc7e98d8da61092d4bc977a11c97fccf552516ca294"
+  },
+  "not_performed": [
+    "flashing",
+    "reboot",
+    "data wipe",
+    "persistent configuration change",
+    "SELinux policy write",
+    "driver ioctl probing",
+    "process injection",
+    "TV internet testing"
+  ],
+  "publication_scope": "Sanitized observations and hashes only; no OEM binary, image, raw log, hardware serial, account or private IP."
+}

@@ -1,0 +1,10 @@
+results/
+__pycache__/
+*.pyc
+*.partial
+*.img
+*.apk
+*.elf
+*.zip
+*.log
+.DS_Store
